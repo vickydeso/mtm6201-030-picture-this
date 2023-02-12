@@ -14,11 +14,40 @@
     <div class="title">
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
-<!-- Landscape Image -->
-      <picture>
-
-      </picture>
     </div>
+    <!-- Landscape Image -->
+    <picture>
+      <source srcset="images/museum_landscape_320.jpg,
+                        images/museum_landscape_640.jpg 2x,
+                        images/museum_landscape_960.jpg 3x"
+               media="(max-width: 320px)">
+
+      <source srcset="images/museum_landscape_480.jpg,
+                        images/museum_landscape_960.jpg 2x,
+                        images/museum_landscape_1440.jpg 3x"
+               media="(max-width: 480px)">
+
+      <source srcset="images/museum_landscape_720.jpg,
+                        images/museum_landscape_1440.jpg 2x,
+                        images/museum_landscape_2160.jpg 3x"
+               media="(max-width: 720px)">
+
+      <!-- Square Image -->
+      <source srcset="images/museum_square_480.jpg,
+                        images/museum_square_960.jpg 2x,
+                        images/museum_square_1440.jpg 3x"
+                media="(min-width: 960px)">
+
+      <source srcset="images/museum_square_640.jpg,
+                        images/museum_square_1280.jpg 2x,
+                        images/museum_square_1920.jpg 3x"
+               media="(min-width: 1280px)">
+
+      <source srcset="images/museum_square_800.jpg,
+                        images/museum_square_1600.jpg 2x,
+                        images/museum_square_2400.jpg 3x"
+               media="(min-width: 1600px)">
+    </picture>
     <img src="images/museum.jpg" alt="image of a museum sitting area">
   </header>
 </body>
